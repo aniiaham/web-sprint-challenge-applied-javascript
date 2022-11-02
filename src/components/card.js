@@ -1,4 +1,4 @@
-const Card = (article) => {
+
   // TASK 5
   // ---------------------
   // Implement this function, which should return the markup you see below.
@@ -17,8 +17,21 @@ const Card = (article) => {
   //   </div>
   // </div>
   //
-}
+const Card = (article) => {
+  const card = document.createElement('div');
+  const div = document.createElement('div');
+  const author = document.createElement('div');
+  const imageContainer = document.createElement('div');
+  const image = document.createElement('img');
+  const span = document.createElement('span');
 
+  div.textContent = article.headline;
+  image.textContent = article.authorPhoto;
+  span.textContent = article.authorName;
+  
+  console.log(div)
+}
+Card('')
 const cardAppender = (selector) => {
   // TASK 6
   // ---------------------
